@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for the Pantrio mobile application.">
+  <meta name="robots" content="index,follow">
+  <title>Pantrio Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f6f7f9;
+      --surface: #ffffff;
+      --text: #18212b;
+      --muted: #5d6875;
+      --border: #dfe4ea;
+      --accent: #2457d6;
+      --accent-soft: #edf2ff;
+      --shadow: 0 16px 44px rgba(20, 31, 45, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.68;
+    }
+
+    a { color: var(--accent); }
+    a:hover { text-decoration-thickness: 2px; }
+
+    .page {
+      width: min(940px, calc(100% - 32px));
+      margin: 48px auto;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    header {
+      padding: 52px 56px 38px;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(145deg, var(--surface), var(--accent-soft));
+    }
+
+    header p { margin: 0; }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 750;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 8px 0 12px;
+      font-size: clamp(2.35rem, 7vw, 4.25rem);
+      line-height: 1.02;
+      letter-spacing: -0.045em;
+    }
+
+    .meta {
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 20px;
+    }
+
+    main { padding: 38px 56px 56px; }
+
+    .intro {
+      font-size: 1.08rem;
+      color: var(--muted);
+    }
+
+    nav {
+      margin: 34px 0 44px;
+      padding: 22px 24px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--accent-soft);
+    }
+
+    nav strong { display: block; margin-bottom: 8px; }
+
+    nav ul {
+      columns: 2;
+      column-gap: 36px;
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    nav li { break-inside: avoid; margin: 4px 0; }
+
+    section {
+      scroll-margin-top: 20px;
+      margin-top: 50px;
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      font-size: 1.75rem;
+      line-height: 1.2;
+      letter-spacing: -0.025em;
+    }
+
+    h3 {
+      margin: 30px 0 10px;
+      font-size: 1.18rem;
+      line-height: 1.3;
+    }
+
+    p { margin: 0 0 16px; }
+
+    ul { margin: 10px 0 18px; padding-left: 24px; }
+    li { margin: 7px 0; }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .summary-item {
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface);
+    }
+
+    .summary-item h3 { margin: 0 0 6px; }
+    .summary-item p { margin: 0; color: var(--muted); }
+
+    .table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px 0;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    table {
+      width: 100%;
+      min-width: 660px;
+      border-collapse: collapse;
+      background: var(--surface);
+    }
+
+    th, td {
+      padding: 15px 17px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--accent-soft);
+      font-size: 0.92rem;
+    }
+
+    tr:last-child td { border-bottom: 0; }
+
+    .notice {
+      margin: 20px 0;
+      padding: 18px 20px;
+      border-left: 4px solid var(--accent);
+      border-radius: 10px;
+      background: var(--accent-soft);
+    }
+
+    footer {
+      padding: 25px 56px 34px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d1117;
+        --surface: #151b23;
+        --text: #eef3f8;
+        --muted: #aab5c0;
+        --border: #303946;
+        --accent: #8aabff;
+        --accent-soft: #1a2945;
+        --shadow: none;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .page { width: min(100% - 20px, 940px); margin: 10px auto; }
+      .card { border-radius: 14px; }
+      header, main, footer { padding-left: 22px; padding-right: 22px; }
+      header { padding-top: 34px; }
+      nav ul { columns: 1; }
+      .summary-grid { grid-template-columns: 1fr; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; font-size: 11pt; }
+      .page { width: 100%; margin: 0; }
+      .card { border: 0; box-shadow: none; }
+      header, main, footer { padding-left: 0; padding-right: 0; }
+      nav { display: none; }
+      a { color: inherit; text-decoration: none; }
+      section { break-inside: avoid-page; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <article class="card">
+      <header>
+        <p class="eyebrow">Pantrio</p>
+        <h1>Privacy Policy</h1>
+        <div class="meta">
+          <span><strong>Effective date:</strong> July 27, 2026</span>
+          <span><strong>Privacy contact:</strong> <a href="mailto:jindexin6@gmail.com">jindexin6@gmail.com</a></span>
+        </div>
+      </header>
+
+      <main>
+        <div class="intro">
+          <p>Pantrio ("Pantrio," "we," "our," or "us") respects your privacy. This Privacy Policy explains how Pantrio collects, uses, stores, and shares information when you use the Pantrio mobile application and related services (the "Service").</p>
+          <p>This policy describes the current production version of the Service. Some features are optional, so the information processed may depend on which features you choose to use.</p>
+        </div>
+
+        <nav aria-label="Privacy Policy contents">
+          <strong>Contents</strong>
+          <ul>
+            <li><a href="#information">Information we collect</a></li>
+            <li><a href="#uses">How we use information</a></li>
+            <li><a href="#providers">Third-party providers</a></li>
+            <li><a href="#sharing">How we share information</a></li>
+            <li><a href="#tracking">No advertising tracking</a></li>
+            <li><a href="#retention">Storage and retention</a></li>
+            <li><a href="#deletion">Deletion and data requests</a></li>
+            <li><a href="#choices">Your choices</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#children">Children's privacy</a></li>
+            <li><a href="#transfers">International transfers</a></li>
+            <li><a href="#changes">Changes to this policy</a></li>
+            <li><a href="#contact">Contact Pantrio</a></li>
+          </ul>
+        </nav>
+
+        <section aria-labelledby="glance-title">
+          <h2 id="glance-title">Privacy at a Glance</h2>
+          <div class="summary-grid">
+            <div class="summary-item">
+              <h3>Account data</h3>
+              <p>Email address, account identifier, and authentication information are used to create and secure your account. They are not used for tracking.</p>
+            </div>
+            <div class="summary-item">
+              <h3>Pantry and app content</h3>
+              <p>Inventory, shopping, recipe, preference, note, and AI prompt data may be stored locally or synced with your account. They are not used for advertising.</p>
+            </div>
+            <div class="summary-item">
+              <h3>Errors and crashes</h3>
+              <p>Sentry receives error-related diagnostics and may receive an error-associated replay when an error occurs. This information is used for debugging, not tracking.</p>
+            </div>
+            <div class="summary-item">
+              <h3>Photos and audio</h3>
+              <p>Original photo and audio files remain on your device and are not uploaded by Pantrio.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="information">
+          <h2>1. Information We Collect</h2>
+
+          <h3>Account and Authentication Information</h3>
+          <p>When you create or use an account, Pantrio may process your name or username, email address, account identifier, authentication metadata, and credentials used to sign in. We use this information to create, authenticate, secure, and manage your account.</p>
+          <p>Passwords are used only for authentication. Pantrio does not store a readable plaintext copy of your password. Passwords are processed and retained only in a protected, non-readable form by the authentication system used for the Service.</p>
+          <p>If you use Sign in with Apple or Google Sign-In, Pantrio may receive limited profile information permitted by that provider, such as your name, email address, and provider account identifier. Pantrio does not receive your Apple or Google password.</p>
+
+          <h3>Pantry, Shopping, Recipe, and Other User Content</h3>
+          <p>Depending on the features you use, you may provide food inventory entries, shopping-list items, expiration dates, storage locations, recipes, food preferences, custom notes, and other information you choose to save. If cloud synchronization is enabled, this information may be transmitted to and stored by Pantrio or its cloud service providers and linked to your account. Otherwise, some information may remain only on your device.</p>
+
+          <h3>AI Prompts and Responses</h3>
+          <p>When you use an AI-powered feature, text prompts, messages, and related context needed to answer the request may be transmitted to OpenAI for processing. Pantrio may store prompts and responses associated with your account when needed to provide conversation history, improve reliability, prevent abuse, or maintain security.</p>
+          <p>Pantrio does not use your AI prompts or responses to train its own AI models. OpenAI states that content sent through its API is not used to train OpenAI models by default unless the API customer affirmatively opts in. Do not include passwords, payment details, government identifiers, medical information, or other highly sensitive information in AI prompts.</p>
+
+          <h3>Errors, Crash Reports, and Error-Associated Replay</h3>
+          <p>Pantrio uses Sentry to identify and fix software errors, crashes, and reliability problems. When an error or crash occurs, Sentry may receive an error code, exception message, stack trace, timestamp, app version, operating-system version, device model or type, diagnostic context or breadcrumbs associated with the error, network or performance context, IP address, and event, installation, session, device, or account identifiers available to the SDK.</p>
+          <p>When an error occurs, Sentry may also receive an error-associated session replay containing a visual and technical record of the app immediately before and after the error. Pantrio configures replay to be uploaded only for sessions in which an error occurs; ordinary sessions are not sampled or uploaded for replay. Screen text and images are masked where supported, and Pantrio does not intentionally send passwords, original photo or audio files, or the contents of AI prompts to Sentry.</p>
+          <p>Sentry data may be linked to a user, account, device, installation, or session because the diagnostic event may include an IP address or persistent identifier. Pantrio uses this information only for debugging, security, reliability, and app functionality. It is not used for targeted advertising, advertising measurement, or data-broker purposes.</p>
+          <p>Pantrio does not use Sentry to collect user feedback through an in-app Sentry feedback form.</p>
+
+          <h3>Photos and Audio Stored on Your Device</h3>
+          <p>Photos and audio recordings created or selected through Pantrio are stored locally on your device. Pantrio does not upload or retain the original photo or audio files on its servers, send them to OpenAI, or provide them to another service provider. They remain on your device until you delete them, clear the app data, or uninstall the app. Device backups controlled by you or your operating-system provider may operate separately from Pantrio.</p>
+
+          <h3>Notifications</h3>
+          <p>Pantrio may schedule expiration or shopping reminders locally on your device. If Pantrio uses remote push notifications for an enabled feature, the app and its notification provider may process a push token and limited device or app information needed to deliver the notification. You can manage notification permissions in your device settings.</p>
+        </section>
+
+        <section id="uses">
+          <h2>2. How We Use Information</h2>
+          <p>Pantrio uses collected information only as reasonably necessary to:</p>
+          <ul>
+            <li>create, authenticate, secure, and manage accounts;</li>
+            <li>provide pantry, shopping, synchronization, reminder, and other requested app features;</li>
+            <li>process AI requests and return generated results;</li>
+            <li>diagnose errors, investigate crashes, monitor reliability, and fix bugs;</li>
+            <li>protect the Service against abuse, fraud, and security threats;</li>
+            <li>respond to support and privacy requests;</li>
+            <li>comply with applicable legal obligations; and</li>
+            <li>maintain and improve the functionality and performance of the Service.</li>
+          </ul>
+        </section>
+
+        <section id="providers">
+          <h2>3. Third-Party Service Providers</h2>
+          <p>Pantrio relies on service providers to operate specific features. These providers process information for the service described below and under their own privacy and security terms.</p>
+          <div class="table-wrap" role="region" aria-label="Third-party service providers" tabindex="0">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Provider</th>
+                  <th scope="col">Purpose</th>
+                  <th scope="col">Information That May Be Processed</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="https://sentry.io/privacy/" rel="noopener noreferrer">Sentry</a></td>
+                  <td>Error monitoring and debugging</td>
+                  <td>Error and crash data, error-associated replay, diagnostic context, IP address, and identifiers available to the SDK.</td>
+                </tr>
+                <tr>
+                  <td><a href="https://policies.google.com/privacy" rel="noopener noreferrer">Firebase / Google Cloud</a></td>
+                  <td>Authentication, database, hosting, or synchronization, if used</td>
+                  <td>Email address, account identifiers, authentication records, and cloud-synced app content.</td>
+                </tr>
+                <tr>
+                  <td><a href="https://openai.com/policies/privacy-policy/" rel="noopener noreferrer">OpenAI</a></td>
+                  <td>Processing text submitted to AI-powered features</td>
+                  <td>Prompts, messages, related text context, and generated responses.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://expo.dev/privacy" rel="noopener noreferrer">Expo</a>,
+                    <a href="https://www.apple.com/legal/privacy/" rel="noopener noreferrer">Apple</a>, and
+                    <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google</a>
+                  </td>
+                  <td>App delivery, sign-in, notifications, and platform services, as applicable</td>
+                  <td>Account or provider identifiers, push tokens, app/device information, and service metadata needed for the selected feature.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="sharing">
+          <h2>4. How We Share Information</h2>
+          <p>Pantrio does not sell your personal information. Pantrio may disclose information only:</p>
+          <ul>
+            <li>to service providers that perform the operational functions described in this policy;</li>
+            <li>when required by law, legal process, or a valid governmental request;</li>
+            <li>when reasonably necessary to protect users, Pantrio, or others from fraud, abuse, security threats, or harm;</li>
+            <li>in connection with a merger, acquisition, financing, reorganization, or sale of all or part of the business, subject to appropriate protections; or</li>
+            <li>with your direction or consent.</li>
+          </ul>
+        </section>
+
+        <section id="tracking">
+          <h2>5. No Advertising Tracking or Data Brokerage</h2>
+          <p>Pantrio does not combine information collected from the Service with information from other companies' apps, websites, or offline properties for targeted advertising or advertising measurement. Pantrio does not share information with data brokers and does not use Sentry, Firebase, OpenAI, or another service provider for cross-app advertising tracking.</p>
+          <p>Pantrio does not use the advertising identifier (IDFA) for tracking. Diagnostic information may be linked to a user or device for bug fixing, but linkage for debugging is not used for advertising tracking.</p>
+        </section>
+
+        <section id="retention">
+          <h2>6. Local Storage, Cloud Storage, and Retention</h2>
+          <p>Pantrio retains information according to the type of information and the feature involved:</p>
+          <ul>
+            <li>Local photos and audio remain on your device until you delete them, clear app data, or uninstall Pantrio.</li>
+            <li>Account information and cloud-synced app content are retained while your account is active or as needed to provide the Service. They are deleted or de-identified after account deletion is completed, except where a limited retention period is required for security, fraud prevention, legal compliance, dispute resolution, or backup integrity.</li>
+            <li>Sentry error events and error-associated replays are retained for the retention period configured for Pantrio's Sentry project and are then automatically deleted or de-identified in accordance with that configuration.</li>
+            <li>AI prompts and responses stored by Pantrio are retained while needed to provide conversation history or the related feature, until you delete the applicable content or your account, subject to limited security, legal, and backup retention.</li>
+            <li>Temporary backups and archived copies may remain until overwritten or deleted through the normal backup cycle.</li>
+          </ul>
+          <p>Pantrio may retain aggregated or de-identified information that cannot reasonably be linked to a person for security, reliability, and service-improvement purposes.</p>
+        </section>
+
+        <section id="deletion">
+          <h2>7. Account Deletion and Data Requests</h2>
+          <p>You can initiate deletion of your Pantrio account from within the app through <strong>Settings &gt; Account &gt; Delete Account</strong>. If you cannot access the app or encounter a problem with the deletion feature, contact <a href="mailto:jindexin6@gmail.com">jindexin6@gmail.com</a>.</p>
+          <p>Account deletion is intended to remove your Pantrio account, email address, account identifier, and cloud-stored content associated with the account, except for information Pantrio must retain for a limited period for legal, security, fraud-prevention, dispute-resolution, or backup purposes. Information stored only on your device may remain until you delete it, clear the app data, or uninstall the app.</p>
+          <p>Depending on your location, you may also have the right to request access to, correction of, deletion of, restriction of, or a copy of personal information associated with you. Pantrio may take reasonable steps to verify your identity before fulfilling a request.</p>
+        </section>
+
+        <section id="choices">
+          <h2>8. Your Choices</h2>
+          <ul>
+            <li><strong>Account information:</strong> You may update available profile information through the app or contact Pantrio.</li>
+            <li><strong>AI features:</strong> You may choose not to use optional AI-powered features.</li>
+            <li><strong>Notifications:</strong> You may change notification permissions through your device settings.</li>
+            <li><strong>Local media:</strong> You control locally stored photos and audio and can delete them from the app or device.</li>
+            <li><strong>Account deletion:</strong> You may initiate deletion using the in-app deletion control described above.</li>
+          </ul>
+        </section>
+
+        <section id="security">
+          <h2>9. Security</h2>
+          <p>Pantrio uses reasonable administrative, technical, and organizational safeguards designed to protect information, including authenticated account access, encrypted network communications where supported, access controls, and service-provider security controls. No electronic transmission or storage method can be guaranteed completely secure.</p>
+          <p>Pantrio will take appropriate steps regarding security incidents and will notify affected users or authorities when required by applicable law.</p>
+        </section>
+
+        <section id="children">
+          <h2>10. Children's Privacy</h2>
+          <p>The Service is not directed to children under 13, and Pantrio does not knowingly collect personal information from children under 13. If Pantrio learns that such information has been collected, it will take reasonable steps to delete it.</p>
+        </section>
+
+        <section id="transfers">
+          <h2>11. International Data Transfers</h2>
+          <p>Pantrio and its service providers may process information in the United States and other countries that may have different data-protection laws than your location. Where required, Pantrio will use reasonable safeguards for international transfers.</p>
+        </section>
+
+        <section id="changes">
+          <h2>12. Changes to This Privacy Policy</h2>
+          <p>Pantrio may update this Privacy Policy to reflect changes to the Service, data practices, legal requirements, or service providers. The updated policy will identify a new effective date. For material changes, Pantrio may provide additional notice through the Service or by another reasonable method.</p>
+        </section>
+
+        <section id="contact">
+          <h2>13. Contact Pantrio</h2>
+          <p>For privacy, account-deletion, support, or legal inquiries, contact Pantrio Support at <a href="mailto:jindexin6@gmail.com">jindexin6@gmail.com</a>.</p>
+        </section>
+
+        <div class="notice">
+          This page contains no advertising, analytics script, cookie banner, or form. It is hosted through GitHub Pages, which may log visitors' IP addresses for security purposes.
+        </div>
+      </main>
+
+      <footer>
+        &copy; 2026 Pantrio. All rights reserved.
+      </footer>
+    </article>
+  </div>
+</body>
+</html>
