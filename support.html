@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support and contact information for the Pantrio mobile application.">
+  <meta name="robots" content="index,follow">
+  <title>Pantrio Support</title>
+  <link rel="stylesheet" href="legal-styles.css">
+</head>
+<body>
+  <div class="page">
+    <article class="card">
+      <header>
+        <p class="eyebrow">Pantrio</p>
+        <h1 class="compact">Support</h1>
+        <div class="meta">
+          <span><strong>Email:</strong> <a href="mailto:support.pantrio@gmail.com">support.pantrio@gmail.com</a></span>
+          <span><strong>App:</strong> Pantrio for iOS</span>
+        </div>
+      </header>
+
+      <main>
+        <div class="intro">
+          <p>Need help with Pantrio? Send a request through the support form, or write to us. Pantrio is built and supported by a small team, so we cannot promise a reply to every message, but privacy and account-deletion requests are always handled.</p>
+        </div>
+
+        <nav aria-label="Support page contents">
+          <strong>On this page</strong>
+          <ul>
+            <li><a href="#contact">Contact support</a></li>
+            <li><a href="#account">Signing in and account access</a></li>
+            <li><a href="#ai">AI features and usage limits</a></li>
+            <li><a href="#providers">Choosing an AI provider</a></li>
+            <li><a href="#billing">Subscriptions and billing</a></li>
+            <li><a href="#data">Data, privacy, and deletion</a></li>
+            <li><a href="#troubleshooting">Troubleshooting</a></li>
+            <li><a href="#feedback">Bugs and feature requests</a></li>
+            <li><a href="#legal">Legal pages</a></li>
+          </ul>
+        </nav>
+
+        <section id="contact">
+          <h2>Contact Support</h2>
+          <p>Use the <a href="https://forms.gle/4fCafUrpwthu34Gm6" rel="noopener noreferrer">Pantrio support form</a> for any question about the app, your account, a purchase, or a privacy request, or write to <a href="mailto:support.pantrio@gmail.com">support.pantrio@gmail.com</a>.</p>
+          <p>If you do write in, including the following makes a fix much faster:</p>
+          <ul>
+            <li>the email address on your Pantrio account;</li>
+            <li>your iPhone or iPad model and the iOS version, from Settings &gt; General &gt; About;</li>
+            <li>the Pantrio app version, shown in the app's settings;</li>
+            <li>what you expected to happen and what happened instead; and</li>
+            <li>a screenshot if the problem is visible on screen. Please hide any personal information you do not want to share.</li>
+          </ul>
+          <p>Never send your Pantrio password, your Apple Account password, or a full API key. We will never ask you for them.</p>
+        </section>
+
+        <section id="account">
+          <h2>Signing In and Account Access</h2>
+          <div class="faq">
+            <h3>I cannot sign in</h3>
+            <p>Pantrio supports email and password, Sign in with Apple, and Google Sign-In. Check that you are using the same method you used to create the account — signing in with a different provider creates a separate account. If you signed up with email and password, use the password reset link on the sign-in screen.</p>
+
+            <h3>I changed phones or reinstalled the app</h3>
+            <p>Your inventory, shopping list, chat history, and preferences live on the device where you created them and are not synced between devices. Signing in on a new device starts with empty lists. Your subscription, plan, and AI usage allowance are tied to your account and do follow you.</p>
+
+            <h3>The app says it cannot verify my account</h3>
+            <p>This is usually a connection problem. Check your network, then retry. If the app offers to sign you out, you can do that and sign in again; your server-side subscription is unaffected. If the message mentions a pending account deletion, contact support before clearing anything.</p>
+          </div>
+        </section>
+
+        <section id="ai">
+          <h2>AI Features and Usage Limits</h2>
+          <div class="faq">
+            <h3>The assistant says I reached my limit</h3>
+            <p>Pantrio Cloud AI includes a daily allowance of AI tokens. The counter resets on a daily schedule, and the app shows the reset time on the plan screen. Long conversations, image requests, and recipe searches consume the allowance faster. A subscription raises or removes the limit depending on the plan.</p>
+
+            <h3>A request failed, timed out, or returned nothing</h3>
+            <p>AI requests depend on your connection, the hosted AI service, and — for recipe searches — third-party search providers. Retry once; if it keeps failing, wait a few minutes and try again, or switch providers in Settings &gt; AI Provider. Very long conversations can also exceed the input size a provider accepts; starting a new chat usually resolves it.</p>
+
+            <h3>The assistant gave me a wrong answer, recipe, or calorie estimate</h3>
+            <p>AI output can be wrong, and estimated values are labeled as estimates. Always verify ingredients, allergens, cooking steps, and storage advice before relying on them. You can tell us about a specific answer and we will use it to improve the service.</p>
+
+            <h3>Why do I need to sign in to use the assistant?</h3>
+            <p>The assistant runs on hosted services that are tied to your account for authentication, subscription status, and usage limits. Signing in is what keeps the service available and prevents abuse.</p>
+          </div>
+        </section>
+
+        <section id="providers">
+          <h2>Choosing an AI Provider</h2>
+          <p>In Settings &gt; AI Provider you can choose between <strong>Pantrio Cloud AI</strong>, <strong>Apple Intelligence</strong> on supported devices, and <strong>My own AI API</strong>.</p>
+          <ul>
+            <li><strong>Apple Intelligence</strong> requires a supported device with Apple Intelligence enabled. If the app says it is unavailable, check iOS Settings &gt; Apple Intelligence &amp; Siri.</li>
+            <li><strong>My own AI API</strong> lets you point Pantrio at an OpenAI-compatible provider using your own API key and model name. Keys are stored in the device keychain, never on our servers. Test Connection tells you whether the provider accepted the key and model.</li>
+            <li>If your own provider rejects the request, check that your base URL ends with the path your provider documents (often <code>/v1</code>), that the model name is exact, and that your account has credit and access to that model.</li>
+            <li>Recipe search still uses Pantrio's search service whichever provider you choose, as described in the Privacy Policy.</li>
+          </ul>
+        </section>
+
+        <section id="billing">
+          <h2>Subscriptions and Billing</h2>
+          <div class="faq">
+            <h3>How do I see the price and renewal terms?</h3>
+            <p>Open Settings &gt; Plan &amp; Usage. The available plans, their prices, renewal periods, and the auto-renewal terms are shown there before you purchase. Prices come from the App Store in your local currency.</p>
+
+            <h3>How do I cancel?</h3>
+            <p>Tap <strong>Manage Apple Subscription</strong> in Settings &gt; Plan &amp; Usage, or open iOS Settings &gt; your name &gt; Subscriptions. Cancelling stops the next renewal; access continues until the end of the paid period. Deleting your Pantrio account does not cancel a subscription.</p>
+
+            <h3>I paid but Pantrio still shows the free plan</h3>
+            <p>This usually means verification has not completed. Make sure you are signed in to the same Pantrio account you purchased with, then open Settings &gt; Plan &amp; Usage and use <strong>Restore Purchases</strong> or refresh the screen while online. If your purchase was made with a different Apple Account than the one on this device, restore it on that Apple Account.</p>
+
+            <h3>I want a refund</h3>
+            <p>Refunds for App Store purchases are handled by Apple, not by Pantrio. Request one at <a href="https://reportaproblem.apple.com/" rel="noopener noreferrer">reportaproblem.apple.com</a>. We cannot issue or reverse App Store charges.</p>
+
+            <h3>My billing grace period or payment failed</h3>
+            <p>If Apple reports a billing issue, the app shows the subscription as being in a grace period or as expired. Update your payment method in iOS Settings &gt; your name &gt; Payment &amp; Shipping; access resumes when Apple confirms the payment.</p>
+          </div>
+        </section>
+
+        <section id="data">
+          <h2>Data, Privacy, and Deletion</h2>
+          <div class="faq">
+            <h3>How do I delete my account?</h3>
+            <p>Open Settings &gt; Account &gt; Delete account and follow the confirmation steps. Full instructions, including what is deleted and what is retained, are on the <a href="delete-account.html">Account Deletion page</a>.</p>
+
+            <h3>How do I clear data without deleting my account?</h3>
+            <p>Settings &gt; Privacy &amp; Data lets you clear chat messages or reset all device data for the account. Both actions are local to the device and cannot be undone. Deleting your account also removes the server-side account records.</p>
+
+            <h3>How do I request a copy of my data?</h3>
+            <p>Write to <a href="mailto:support.pantrio@gmail.com">support.pantrio@gmail.com</a> from the address on your account and tell us what you need. We may ask you to verify that you control the account before responding.</p>
+
+            <h3>Where can I read what you collect?</h3>
+            <p>The <a href="index.html">Privacy Policy</a> explains what is collected, how it is used, how long it is kept, and which providers are involved. The <a href="subprocessors.html">Sub-processors page</a> lists the vendors that process data for Pantrio.</p>
+          </div>
+        </section>
+
+        <section id="troubleshooting">
+          <h2>Troubleshooting</h2>
+          <ul>
+            <li><strong>Pantrio cannot reach the server:</strong> check your internet connection and try again. If you use a VPN, a content blocker, or a private DNS profile, try disabling it for Pantrio. The app needs HTTPS and secure WebSocket access to our API.</li>
+            <li><strong>Reminders do not appear:</strong> check iOS Settings &gt; Notifications &gt; Pantrio and make sure notifications are allowed. Reminders are scheduled on your device when you have items nearing expiration or daily reminders enabled.</li>
+            <li><strong>Dark mode or text size looks wrong:</strong> Pantrio follows the system appearance by default, and the app also has its own theme and font-size settings under Settings &gt; Preferences.</li>
+            <li><strong>An attached photo was rejected:</strong> very large or unusual image files cannot be prepared for sending. Try a screenshot or a smaller image.</li>
+            <li><strong>The app crashed:</strong> make sure you are on the latest version from the App Store, then reopen the app. Crash reports help us fix the problem, and you can see what they contain in the Privacy Policy.</li>
+          </ul>
+        </section>
+
+        <section id="feedback">
+          <h2>Bugs and Feature Requests</h2>
+          <p>Bug reports, feature ideas, and translation corrections are all welcome at <a href="mailto:support.pantrio@gmail.com">support.pantrio@gmail.com</a>. For a bug, the details listed under <a href="#contact">Contact Support</a> make a fix much faster.</p>
+          <p>If you are reporting a security problem, please include "Security" in the subject line and describe the issue without including other people's data.</p>
+        </section>
+
+        <section id="legal">
+          <h2>Legal Pages</h2>
+          <ul>
+            <li><a href="index.html">Privacy Policy</a></li>
+            <li><a href="terms-of-use.html">Terms of Use</a></li>
+            <li><a href="delete-account.html">Account Deletion</a></li>
+            <li><a href="subprocessors.html">Sub-processors</a></li>
+            <li><a href="licenses.html">Open-source licences</a></li>
+          </ul>
+        </section>
+      </main>
+
+      <footer>
+        &copy; 2026 Pantrio. All rights reserved.
+        <div class="site-links">
+          <a href="index.html">Privacy Policy</a>
+          <a href="terms-of-use.html">Terms of Use</a>
+          <a href="support.html">Support</a>
+          <a href="delete-account.html">Delete Account</a>
+          <a href="subprocessors.html">Sub-processors</a>
+          <a href="licenses.html">Licences</a>
+        </div>
+      </footer>
+    </article>
+  </div>
+</body>
+</html>
