@@ -305,7 +305,7 @@
           <p>If you use Sign in with Apple or Google Sign-In, Pantrio may receive limited profile information permitted by that provider, such as your name, email address, and provider account identifier. Pantrio does not receive your Apple or Google password.</p>
 
           <h3>Pantry, Shopping, Recipe, and Other App Content</h3>
-          <p>Depending on the features you use, you may provide food inventory entries, shopping-list items, expiration dates, storage locations, recipes, food preferences, dietary patterns and allergens, custom notes, and other information you choose to save. This content is stored on your device and associated with your signed-in account on that device. It is not synchronized to a Pantrio server. Specific parts of it are transmitted only when a feature you invoke needs them, as described below.</p>
+          <p>Depending on the features you use, you may provide food inventory entries, shopping-list items, expiration dates, storage locations, recipes, food preferences, dietary patterns and allergens, and other information you choose to save. This content is stored on your device and associated with your signed-in account on that device. It is not synchronized to a Pantrio server. Specific parts of it are transmitted only when a feature you invoke needs them, as described below.</p>
 
           <h3>Chat Messages and AI Context</h3>
           <p>Your chat history, conversation summaries, and settings are stored on your device. When you send a message, Pantrio transmits the messages needed for that request, together with the context the request requires, to the AI provider selected for your account. Depending on the request, that context can include your username, the fridge or shopping-list contents the model reads while answering, selected ingredients, and saved recipe preferences such as cuisines, dietary patterns, and allergens.</p>
@@ -329,7 +329,7 @@
           <p>If you use Sign in with Apple, the app sends Apple's one-time authorization code to Pantrio so that Pantrio can disconnect your Apple sign-in when you delete your Pantrio account. Pantrio exchanges that code with Apple and stores the resulting refresh token in encrypted form. The credential is used only for that disconnection request and is removed when your account is deleted.</p>
 
           <h3>Service, Usage, and Diagnostic Data</h3>
-          <p>Pantrio's servers maintain the records needed to operate the Service: your Firebase account identifier, your Pantrio username, the anonymous App Store account token described above, your subscription state, daily AI token counters, and daily web-search counters. These records are used for authentication, entitlement, quota accounting, abuse prevention, and support.</p>
+          <p>Pantrio's servers maintain the records needed to operate the Service: your Firebase account identifier, your Pantrio username, the anonymous App Store account token described above, your subscription state, daily and monthly AI token counters, recipe-recommendation counters, and daily web-search counters. These records are used for authentication, entitlement, quota accounting, abuse prevention, and support.</p>
 
           <h3>Errors, Crash Reports, and Error-Associated Replay</h3>
           <p>Pantrio uses Sentry to identify and fix software errors, crashes, and reliability problems. When an error or crash occurs, Sentry may receive an error code, exception message, stack trace, timestamp, app version, operating-system version, device model or type, diagnostic context or breadcrumbs associated with the error, network or performance context, IP address, and event, installation, session, device, or account identifiers available to the SDK.</p>
@@ -337,7 +337,7 @@
           <p>Sentry data may be linked to a user, account, device, installation, or session because the diagnostic event may include an IP address or persistent identifier. Pantrio uses this information only for debugging, security, reliability, and app functionality. It is not used for targeted advertising, advertising measurement, or data-broker purposes.</p>
 
           <h3>Notifications</h3>
-          <p>Pantrio schedules expiration and shopping reminders locally on your device. The Service does not register a push notification token with a notification provider. You can manage notification permissions in your device settings.</p>
+          <p>Pantrio schedules expiration reminders for items nearing their expiration date locally on your device. The Service does not register a push notification token with a notification provider. You can manage notification permissions in your device settings.</p>
 
           <h3>Support Requests</h3>
           <p>If you contact Pantrio through the support form or by email, Pantrio receives the reason you selected, the message you write, and any email address or other details you choose to include. Pantrio uses this information only to answer you and resolve the issue you raised, and retains it only as long as needed for those purposes, including keeping a record of the request.</p>
@@ -482,7 +482,7 @@
           <p>Most Pantrio data lives on your device. Pantrio's servers keep only the account, subscription, and usage records needed to operate the Service.</p>
           <h3>Stored on your device</h3>
           <ul>
-            <li>Fridge inventory, shopping list, recipes, saved preferences, custom notes, chat messages and summaries, and scheduled reminders.</li>
+            <li>Fridge inventory, shopping list, recipes, saved preferences, chat messages and summaries, and scheduled reminders.</li>
             <li>Cached copies of photos you attached to chats, until you delete the chat, clear chat data, or delete the account.</li>
             <li>Your Firebase session, kept in the device's secure keychain rather than in plain application storage.</li>
             <li>API keys for "My own AI API," kept in the device's secure keychain.</li>
@@ -491,7 +491,7 @@
           <ul>
             <li>Your Firebase account identifier, your Pantrio username, and the anonymous App Store account token.</li>
             <li>Verified App Store subscription state, transaction records, and App Store Server Notification records, plus the subscription status the app reports for diagnostics.</li>
-            <li>Daily AI token counters and daily web-search counters, keyed to your account identifier and used for quota, abuse prevention, and cost accounting.</li>
+            <li>Daily and monthly AI token counters, recipe-recommendation counters, and daily web-search counters, keyed to your account identifier and used for quota, abuse prevention, and cost accounting.</li>
             <li>Encrypted Sign in with Apple credentials, used only to disconnect Apple sign-in. They are removed when your account is deleted, or as soon as the disconnection request to Apple completes, if that is still in progress.</li>
           </ul>
           <h3>Retention periods</h3>
