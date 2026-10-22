@@ -75,6 +75,13 @@ h1.compact { font-size: clamp(2rem, 6vw, 3.4rem); }
   gap: 8px 20px;
 }
 
+.language-switch {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
 main { padding: 38px 56px 56px; }
 
 .intro {

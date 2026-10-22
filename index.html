@@ -6,6 +6,7 @@
   <meta name="description" content="Privacy Policy for the Pantrio mobile application.">
   <meta name="robots" content="index,follow">
   <title>Pantrio Privacy Policy</title>
+  <script src="legal-language.js"></script>
   <style>
     :root {
       color-scheme: light dark;
@@ -76,6 +77,13 @@
       display: flex;
       flex-wrap: wrap;
       gap: 8px 20px;
+    }
+
+    .language-switch {
+      display: inline-block;
+      margin-top: 14px;
+      font-size: 0.95rem;
+      font-weight: 700;
     }
 
     main { padding: 38px 56px 56px; }
@@ -235,9 +243,10 @@
         <p class="eyebrow">Pantrio</p>
         <h1>Privacy Policy</h1>
         <div class="meta">
-          <span><strong>Effective date:</strong> September 30, 2026</span>
+          <span><strong>Effective date:</strong> October 21, 2026</span>
           <span><strong>Privacy contact:</strong> <a href="mailto:support.pantrio@gmail.com">support.pantrio@gmail.com</a></span>
         </div>
+        <a class="language-switch" href="?lang=zh" hreflang="zh-Hans" lang="zh-Hans">中文</a>
       </header>
 
       <main>
@@ -249,6 +258,7 @@
         <nav aria-label="Privacy Policy contents">
           <strong>Contents</strong>
           <ul>
+            <li><a href="#guest-access">Using Pantrio without an account</a></li>
             <li><a href="#information">Information we collect</a></li>
             <li><a href="#uses">How we use information</a></li>
             <li><a href="#ai">AI features and your choices</a></li>
@@ -275,11 +285,11 @@
             </div>
             <div class="summary-item">
               <h3>Pantry and app content</h3>
-              <p>Inventory, shopping, recipe, preference, note, and chat data are stored on your device and linked to your Pantrio account. They are not cloud-synced and not used for advertising.</p>
+              <p>Inventory, shopping, recipe, preference, and other app content is stored on your device. Guest data is not linked to a Pantrio account. Signed-in data is associated locally with that account. Pantrio does not synchronize this content and does not use it for advertising.</p>
             </div>
             <div class="summary-item">
               <h3>AI requests</h3>
-              <p>Messages, photos you attach, and the fridge or recipe context needed to answer are sent to the AI provider you choose. Pantrio's servers produce the answer without keeping a copy of that content.</p>
+              <p>AI requires a Pantrio account. Messages, photos you attach, and the fridge or recipe context needed to answer are sent to the AI provider you choose. Pantrio's servers produce the answer without keeping a copy of that content.</p>
             </div>
             <div class="summary-item">
               <h3>Errors and crashes</h3>
@@ -296,6 +306,14 @@
           </div>
         </section>
 
+        <section id="guest-access">
+          <h2>Using Pantrio Without an Account</h2>
+          <p>You may use Pantrio without creating an account. Guest mode supports fridge inventory, shopping lists, expiration tracking, local reminders, appearance and app settings, privacy controls, and local data-clearing tools.</p>
+          <p>Guest mode uses a randomly generated, device-local storage identifier. This identifier is not an email address, Pantrio username, Firebase account identifier, or subscription identifier. Pantrio does not associate guest data with an account.</p>
+          <p>Guest data remains in Pantrio's local app storage on this device. It is not synchronized to Pantrio or another device, and Pantrio cannot restore it from a server. Reset Data on This Device, clearing app data, or uninstalling Pantrio can permanently remove it.</p>
+          <p>Creating or signing in to an account does not automatically transfer guest data in this version. Hosted AI, recipe and web search, custom AI-provider settings, Apple subscriptions, account management, and other account-based services require sign-in and do not use guest data.</p>
+        </section>
+
         <section id="information">
           <h2>1. Information We Collect</h2>
 
@@ -305,10 +323,12 @@
           <p>If you use Sign in with Apple or Google Sign-In, Pantrio may receive limited profile information permitted by that provider, such as your name, email address, and provider account identifier. Pantrio does not receive your Apple or Google password.</p>
 
           <h3>Pantry, Shopping, Recipe, and Other App Content</h3>
-          <p>Depending on the features you use, you may provide food inventory entries, shopping-list items, expiration dates, storage locations, recipes, food preferences, dietary patterns and allergens, and other information you choose to save. This content is stored on your device and associated with your signed-in account on that device. It is not synchronized to a Pantrio server. Specific parts of it are transmitted only when a feature you invoke needs them, as described below.</p>
+          <p>Depending on the features you use, you may provide food inventory entries, shopping-list items, expiration dates, storage locations, recipes, food preferences, dietary patterns and allergens, and other information you choose to save.</p>
+          <p>With guest mode, this content is stored under a device-local guest identity and is not associated with a Pantrio account. When you are signed in, the same content is stored on your device and associated with your account on that device. Pantrio does not synchronize either copy to its servers or to another device.</p>
+          <p>Content is transmitted only when a signed-in feature you invoke requires it, as described below. Hosted AI and recipe-search features are not available to guest users in the current release and do not read guest data.</p>
 
           <h3>Chat Messages and AI Context</h3>
-          <p>Your chat history, conversation summaries, and settings are stored on your device. When you send a message, Pantrio transmits the messages needed for that request, together with the context the request requires, to the AI provider selected for your account. Depending on the request, that context can include your username, the fridge or shopping-list contents the model reads while answering, selected ingredients, and saved recipe preferences such as cuisines, dietary patterns, and allergens.</p>
+          <p>AI features require a Pantrio account in the current release. Guest mode does not send prompts, photos, fridge contents, or recipe preferences to an AI provider. For signed-in users, chat history, conversation summaries, and settings are stored on your device. When you send a message, Pantrio transmits the messages needed for that request, together with the context the request requires, to the AI provider selected for your account. Depending on the request, that context can include your username, the fridge or shopping-list contents the model reads while answering, selected ingredients, and saved recipe preferences such as cuisines, dietary patterns, and allergens.</p>
           <p>Pantrio's servers process AI requests in order to produce a response. Pantrio does not store the content of your prompts or responses as conversation records on its servers, and does not use them to train its own AI models.</p>
 
           <h3>Photos You Attach to a Chat</h3>
@@ -365,7 +385,7 @@
 
         <section id="ai">
           <h2>3. AI Features and Your Choices</h2>
-          <p>Pantrio's AI features can run on more than one provider. You choose the provider in the app, and the information sent depends on that choice.</p>
+          <p>AI features require a signed-in Pantrio account in the current release. Pantrio's AI features can run on more than one provider. You choose the provider in the app, and the information sent depends on that choice.</p>
           <div class="table-wrap" role="region" aria-label="AI providers" tabindex="0">
             <table>
               <thead>
@@ -486,6 +506,7 @@
             <li>Cached copies of photos you attached to chats, until you delete the chat, clear chat data, or delete the account.</li>
             <li>Your Firebase session, kept in the device's secure keychain rather than in plain application storage.</li>
             <li>API keys for "My own AI API," kept in the device's secure keychain.</li>
+            <li>Guest data, stored under a device-local guest identity until you reset it, clear app data, or uninstall Pantrio. Pantrio retains no server-side copy.</li>
           </ul>
           <h3>Stored on Pantrio's servers</h3>
           <ul>
@@ -510,6 +531,7 @@
 
         <section id="deletion">
           <h2>8. Account Deletion and Data Requests</h2>
+          <p>Guest users do not have a Pantrio account to delete. To erase guest data, open <strong>Settings &gt; Privacy &amp; Data &gt; Reset Data on This Device</strong>. Deleting a signed-in account does not automatically erase a separate guest-data namespace previously created on the same device.</p>
           <p>You can delete your Pantrio account from within the app through <strong>Settings &gt; Account &gt; Delete account</strong>. Pantrio requires a recent sign-in for this action, so if your session is older than a few minutes you may be asked to sign in again before deletion proceeds. If you cannot access the app or encounter a problem with the deletion feature, submit a request through the <a href="https://forms.gle/4fCafUrpwthu34Gm6" rel="noopener noreferrer">Pantrio support form</a> and choose <strong>Account deletion</strong> as the reason.</p>
           <p>Account deletion removes your Pantrio account, email address, account identifier, username, subscription records tied to your account, usage counters, and the local app data stored on the device for that account, including chat history and attached photos. If you use Sign in with Apple, Pantrio also asks Apple to disconnect the app from your Apple Account; if that automatic request cannot be completed, Pantrio tells you how to disconnect it yourself in iOS Settings.</p>
           <p>Deleting your Pantrio account does not cancel an App Store subscription. Manage or cancel a subscription in your Apple Account settings. Deleting your Pantrio account also does not delete your Google or Apple account; complete that with the provider if you want it removed.</p>
@@ -526,6 +548,7 @@
             <li><strong>Incognito mode:</strong> Incognito keeps new chat messages out of the device's stored chat history, but requests are still sent to your selected AI provider while you use the feature.</li>
             <li><strong>Notifications:</strong> You may change notification permissions through your device settings.</li>
             <li><strong>Local data:</strong> You can clear chat messages, clear an account's data from the device, or reset device data from the app's privacy settings.</li>
+            <li><strong>Guest data:</strong> You may use Pantrio without an account and reset the guest data stored on this device from Privacy &amp; Data.</li>
             <li><strong>Account deletion:</strong> You may initiate deletion using the in-app deletion control described above.</li>
           </ul>
         </section>
